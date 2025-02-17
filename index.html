@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에이치덱스 메인페이지 클론코딩</title>
+    <!-- 글꼴 -->
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- js -->
+    <script src="./script/index.js" defer></script>
+</head>
+<body>
+    <!-- width. 1743px -->
+    <!-- 헤더 -->
+    <header>
+        <div class="header_bnr">
+            <a href="#">
+                <img src="./images/logo.png" alt="로고">
+                <span>카카오톡 채널 추가 시 5,000원 할인 쿠폰 + 추가 혜택 지급</span>
+            </a>
+        </div>
+        <div class="header_inner">
+            <h1><a href="#"><img src="./images/logo.png" alt="로고"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav_title red_nav">STRONG DEXTER</a>
+                    </li>
+                    <li><a href="#" class="nav_title new_n">NEW & FEATURED </a></li>
+                    <li><a href="#" class="nav_title">MEN</a></li>
+                    <li><a href="#" class="nav_title">WOMEN</a></li>
+                    <li><a href="#" class="nav_title">ACC</a></li>
+                    <li><a href="#" class="nav_title">SALE</a></li>
+                    <li><a href="#" class="nav_title">COMMUNITY</a></li>
+                    <li><a href="#" class="nav_title blue_nav">HYM CLASS</a></li>
+                </ul>
+            </nav>
+            <div class="right_n">
+                <div class="lang"><p>KOR / ₩</p></div>
+                <a href="#" class="place"><img src="./images/place.png" alt="위치"></a>
+                <div class="search"><img src="./images/search.png" alt="찾기"></div>
+                <a href="#"><img src="./images/login.png" alt="로그인"></a>
+                <a href="#"><img src="./images/book.png" alt="책갈피"></a>
+                <div class="cart"><img src="./images/cart.png" alt="카트"></div>
+            </div>
+        </div>
+        <!-- depth -->
+        <div class="depth_menu depth1">
+            <div class="depth_contents">
+                <p class="depth_title">NEW & FEATURED</p>
+                <div class="product_info">
+                    <a href="#" class="product_service">신상품 전체보기</a>
+                    <a href="#" class="product_service">베스트 셀러</a>
+                    <a href="">1ST DROP. GYM CLUB LEGACY</a>
+                    <a href="">IFBB PRO COLLABORATION</a>
+                    <a href="">HDEX X BARBLE <img src="" alt="tm"></a>
+                </div>
+                <div class="offline">
+                    <a href="#" class="product_service">오프라인 단독상품</a>
+                </div>
+                <div class="depth_images">
+                    <img src="./images/depth_new1.jpg" alt="">
+                    <img src="./images/depth_new2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--1. 배너 swiper -->
+        <div class="swiper bnr_bg">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg_image1"><a href="#"><img src="./images/bg1.jpg" alt="남자 여자 둘이 서있는 모습"></a></div>
+                <div class="swiper-slide bg_image2"><a href="#"><img src="./images/bg2.jpg" alt="여러명 서있는 모습"></a></div>
+                <div class="swiper-slide bg_image3"><a href="#"><img src="./images/bg3.jpg" alt="가방이 놓여져 있는 모습"></a></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 2.  shop new in -->
+        <div class="new_wrap container">
+            <div class="contents">
+                <div class="new_title_wrap">
+                    SHOP NEW IN
+                    <div class="new_titles">
+                        <a href="#">NEW ARRIVALS</a>
+                        <a href="#">OUTERWEAR</a>
+                        <a href="#">SWEATSHIRT</a>
+                    </div>
+                </div>
+                <!-- 상품 -->
+                <div class="new_product_wrap">
+                    <div class="new_products">
+                        <div class="product">
+                            <a href="#">
+                                <img src="./images/strong_whiteshirt.jpg" alt="">
+                            </a>
+                            <div class="p_info">
+                                <p class="p_title">스트롱 덱스터 자이언트 핏 숏 슬리브 (White)</p>
+                                <p class="p_price"><span class="origin_price">62,000원</span><span>55, 800원</span></p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="./images/strong_slive_white.jpg" alt="">
+                            </a>
+                            <div class="p_info">
+                                <p class="p_title">스트롱 덱스터 자이언트 핏 숏 슬리브 (White)</p>
+                                <p class="p_price"><span class="origin_price">62,000원</span><span>55, 800원</span></p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="./images/agility_dexter.jpg" alt="">
+                            </a>
+                            <div class="p_info">
+                                <p class="p_title">스트롱 덱스터 자이언트 핏 숏 슬리브 (White)</p>
+                                <p class="p_price"><span class="origin_price">62,000원</span><span>55, 800원</span></p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="./images/agility_dexter.jpg" alt="">
+                            </a>
+                            <div class="p_info">
+                                <p class="p_title">스트롱 덱스터 자이언트 핏 숏 슬리브 (White)</p>
+                                <p class="p_price"><span class="origin_price">62,000원</span><span>55, 800원</span></p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="./images/agility_dexter.jpg" alt="">
+                            </a>
+                            <div class="p_info">
+                                <p class="p_title">스트롱 덱스터 자이언트 핏 숏 슬리브 (White)</p>
+                                <p class="p_price"><span class="origin_price">62,000원</span><span>55, 800원</span></p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="./images/agility_dexter.jpg" alt="">
+                            </a>
+                            <div class="p_info">
+                                <p class="p_title">스트롱 덱스터 자이언트 핏 숏 슬리브 (White)</p>
+                                <p class="p_price"><span class="origin_price">62,000원</span><span>55, 800원</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new_image"><img src="./images/new1.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- 3. add_banner - swiper -->
+        <div class="add_banner_wrap">
+            <!-- 스와이퍼 -->
+            <div class="swiper add_banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide add_slide1">
+                        <div class="add_images"><img src="./images/blackbag.jpg" alt="검정백팩"></div>
+                        <div class="right_add">
+                            <h2>Keep solid anywhere</h2>
+                            <a href="#">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide add_slide2">
+                        <div class="add_images"><img src="./images/bodyspray.jpg" alt="바디스프레이"></div>
+                        <div class="right_add">
+                            <h2>BODY SPRAY, deep scent</h2>
+                            <a href="#">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide add_slide3">
+                        <div class="add_images"><img src="./images/newstandards.jpg" alt="스탠다드"></div>
+                        <div class="right_add">
+                            <h2>New Standards for Workout Bags</h2>
+                            <a href="#">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add_arrow">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 4. midbanner_section -->
+        <div class="midbanner_section">
+            <a href="#"><img src="./images/midbanner1.jpg" alt="중간 배너"></a>
+        </div>
+        <!-- 5. best_product -->
+        <div class="best_product">
+            <div class="best_contents">
+                <h2>BEST SELLERS</h2>
+                <!-- swiper -->
+                <div class="swiper best_swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 1 -->
+                        <div class="swiper-slide best_item1">
+                            <img src="./images/balckshirts.jpg" alt="">
+                            <span class="best_title">스트롱 덱스터 럭비 숏 슬리브 (BLACK)</span>
+                            <span class="best_price">
+                                <span class="origin_price">79,000원</span>
+                                <span class="sale_price">71,000원</span>
+                            </span>
+                        </div>
+                        <!-- 2 -->
+                        <div class="swiper-slide best_item2">
+                            <img src="./images/metaltrackjacket.jpg" alt="">
+                            <span class="best_title">[패밀리세일] 메탈 나일론 후디 트랙자켓 2 color</span>
+                            <span class="best_price">
+                                <span class="origin_price">109,000원</span>
+                                <span class="sale_price">32,700원</span>
+                            </span>
+                        </div>
+                        <!-- 3 -->
+                        <div class="swiper-slide best_item3">
+                            <img src="./images/bumudashort.jpg" alt="">
+                            <span class="best_title">스트롱 덱스터 매쉬 버뮤다 쇼츠 (Black)</span>
+                            <span class="best_price">
+                                <span class="origin_price">64,000원</span>
+                                <span class="sale_price">57,600원</span>
+                            </span>
+                        </div>
+                        <!-- 4 -->
+                        <div class="swiper-slide best_item4">
+                            <img src="./images/giantblackshirt.jpg" alt="">
+                            <span class="best_title">스트롱 덱스터 자이언트핏 숏 슬리브 (Black)</span>
+                            <span class="best_price">
+                                <span class="origin_price">64,000원</span>
+                                <span class="sale_price">57,600원</span>
+                            </span>
+                        </div>
+                        <!-- 5 -->
+                        <div class="swiper-slide best_item5">
+                            <img src="./images/strong_whiteshirt.jpg" alt="">
+                            <span class="best_title">스트롱 덱스터 자이언트핏 숏 슬리브 (White)</span>
+                            <span class="best_price">
+                                <span class="origin_price">64,000원</span>
+                                <span class="sale_price">57,600원</span>
+                            </span>
+                        </div>
+                        <!-- 6 -->
+                        <div class="swiper-slide best_item6">
+                            <img src="./images/strong_slive_white.jpg" alt="">
+                            <span class="best_title">스트롱 덱스터 자이언트핏 숏 슬리브 (White)</span>
+                            <span class="best_price">
+                                <span class="sale_price">59,000원</span>
+                            </span>
+                        </div>
+                        <!-- 7 -->
+                        <div class="swiper-slide best_item7">
+                            <img src="./images/joger_charcoal.jpg" alt="">
+                            <span class="best_title">그로우 피그먼트 조거 스웨트 팬츠 (Pigment Charcoal)</span>
+                            <span class="best_price">
+                                <span class="origin_price">98,000원</span>
+                                <span class="sale_price">53,900원</span>
+                            </span>
+                        </div>
+                        <!-- 8 -->
+                        <div class="swiper-slide best_item8">
+                            <img src="./images/joger_charcoal.jpg" alt="">
+                            <span class="best_title">[패밀리세일] 심볼 자수 코튼 머슬핏 숏 슬리브 (Black)</span>
+                            <span class="best_price">
+                                <span class="origin_price">44,000원</span>
+                                <span class="sale_price">26,400원</span>
+                            </span>
+                        </div>
+                        <!-- 9 -->
+                        <div class="swiper-slide best_item9">
+                            <img src="./images/core_sweat_pants_b.jpg" alt="">
+                            <span class="best_title">코어 아플리케 조거 스웨트 팬츠 (Black)</span>
+                            <span class="best_price">
+                                <span class="origin_price">85,000원</span>
+                                <span class="sale_price">46,700원</span>
+                            </span>
+                        </div>
+                        <!-- 10 -->
+                        <div class="swiper-slide best_item10">
+                            <img src="./images/strong_whiteshirt.jpg" alt="">
+                            <span class="best_title">어질리티 덱스터 럭비 매쉬 숏 슬리브 (White)</span>
+                            <span class="best_price">
+                                <span class="origin_price">69,000원</span>
+                                <span class="sale_price">62,100원</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="add_arrow">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- scrollbar -->
+            </div>
+        </div>
+        <!-- 6. midbanner_section -->
+        <div class="midbanner_section">
+            <a href="#"><img src="./images/midbnr.jpg" alt=""></a>
+        </div>
+        <!-- 7. find_your_color -->
+        <div class="find_color_wrap">
+            <div class="find_color_contents">
+                <h2>FIND YOUR COLOR</h2>
+                <ul class="color_items">
+                    <!-- 1 -->
+                    <li class="pigment">
+                        <a href="#"><img src="./images/pigment.jpg" alt=""></a>
+                        <div class="text_box">
+                            <p class="p_title">PIGMENT</p>
+                            <p class="p_info">Vintage and fashionable colors.</p>
+                        </div>
+                    </li>
+                    <!-- 2 -->
+                    <li class="pigment">
+                        <a href="#"><img src="./images/khaki.jpg" alt=""></a>
+                        <div class="text_box">
+                            <p class="p_title">KHAKI</p>
+                            <p class="p_info">A daily color that's easy to use.</p>
+                        </div>
+                    </li>
+                    <!-- 3 -->
+                    <li class="pigment">
+                        <a href="#"><img src="./images/black.jpg" alt=""></a>
+                        <div class="text_box">
+                            <p class="p_title">BLACK</p>
+                            <p class="p_info">Fundamental, indispensable black.</p>
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li class="pigment">
+                        <a href="#"><img src="./images/pink.jpg" alt=""></a>
+                        <div class="text_box">
+                            <p class="p_title">PINK</p>
+                            <p class="p_info">The loveliest color, pink.</p>
+                        </div>
+                    </li>
+                    <!-- 5 -->
+                    <li class="pigment">
+                        <a href="#"><img src="./images/taupe.jpg" alt=""></a>
+                        <div class="text_box">
+                            <p class="p_title">TAUPE</p>
+                            <p class="p_info">A calm and elegant color.</p>
+                        </div>
+                    </li>
+                    <!-- 6 -->
+                    <li class="pigment">
+                        <a href="#"><img src="./images/white.jpg" alt=""></a>
+                        <div class="text_box">
+                            <p class="p_title">WHITE</p>
+                            <p class="p_info">White makes you brighter.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
