@@ -47,9 +47,17 @@ const bnrSwiper = new Swiper('.bnr_bg', {
 // 3. add banner swiper
 const addbannerSwiper = new Swiper('.add_banner', {
     loop:true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
+
 })
 
-// 5. swiper 
+// 5.  best swiper 
 const bestSwiper = new Swiper('.best_swiper', {
     slidesPerView: 5,
     spaceBetween: 15,
@@ -57,4 +65,49 @@ const bestSwiper = new Swiper('.best_swiper', {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
 })
+
+//팝업
+window.addEventListener("scroll", function() {
+    var talkButton = document.querySelector(".talk_btn");
+    var triggerPosition = 500; // 특정 위치(px)에서 고정 시작
+
+    if (window.scrollY > triggerPosition) {
+        talkButton.classList.add("fixed");
+    } else {
+        talkButton.classList.remove("fixed");
+    }
+});
+
+//헤더 .lang_depth
+
+const langTxt = document.querySelector('.lang > p');
+const langDepth = document.querySelector('.lang_depth');
+
+langTxt.addEventListener('click', ()=>{
+    if (langDepth.style.height == '120px') {
+        langDepth.style.height = '0';
+        langDepth.style.opacity = '0';
+    } else {
+        langDepth.style.height = '120px';
+        langDepth.style.opacity = '1';
+    }
+})
+
+// depth search img
+
+const searchImg = document.querySelector('.search > img');
+const searchDepth = document.querySelector('.search_depth');
+
+searchImg.addEventListener('click', () => {
+    if (searchDepth.style.opacity === '1') {
+        searchDepth.style.opacity = '0';
+        searchDepth.style.visibility = 'hidden';
+    } else {
+        searchDepth.style.opacity = '1';
+        searchDepth.style.visibility = 'visible';
+    }
+});
